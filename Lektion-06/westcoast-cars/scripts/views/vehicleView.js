@@ -17,7 +17,7 @@ class VehicleView extends View {
     return `<h1 class="page-title">${this._data.manufacturer} ${this._data.model}</h1>
       <article class="details">
         <section>
-          <img src=./images/${this._data.imageUrl} />
+          <img src=${this._data.imageUrl} />
           <div>
             <p>Årsmodell: <span>${this._data.modelYear}</span></p>
             <p>Antal körda km: <span>${this._data.mileage}</span></p>

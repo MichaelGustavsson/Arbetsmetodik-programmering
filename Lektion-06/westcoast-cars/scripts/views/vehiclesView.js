@@ -22,7 +22,7 @@ class VehiclesView extends View {
       const section = document.createElement('section');
       section.classList.add('card');
       const image = document.createElement('img');
-      image.setAttribute('src', `./images/${vehicle.imageUrl}`);
+      image.setAttribute('src', `${vehicle.imageUrl}`);
       image.alt = vehicle.manufacturer;
       image.setAttribute('vehicleId', vehicle._id);
       section.appendChild(image);
