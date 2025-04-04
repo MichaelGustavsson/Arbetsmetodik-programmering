@@ -9,11 +9,19 @@ export default class HttpClient {
 
   async get() {
     try {
-      const uri = Settings.api_url + this.endpoint;
-      const response = await fetch(uri);
+      const uri = Settings.apiUrl + '/' + this.endpoint;
+      console.log(uri);
+      const response = await fetch(uri, {
+        method: 'GET',
+        headers: {
+          'x-apikey': Settings.apiKey,
+          'Content-Type': 'application/json',
+        },
+      });
 
       if (response.ok) {
         const result = await response.json();
+        console.log(result);
         return result;
       } else {
         throw new Error(

@@ -24,7 +24,7 @@ class VehiclesView extends View {
       const image = document.createElement('img');
       image.setAttribute('src', `./images/${vehicle.imageUrl}`);
       image.alt = vehicle.manufacturer;
-      image.setAttribute('vehicleId', vehicle.id);
+      image.setAttribute('vehicleId', vehicle._id);
       section.appendChild(image);
       const info = document.createElement('p');
       info.innerText = vehicle.manufacturer;

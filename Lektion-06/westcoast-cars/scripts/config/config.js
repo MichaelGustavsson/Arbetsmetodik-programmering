@@ -1,5 +1,4 @@
 export const Settings = {
-  api_url: 'http://localhost:3000/',
+  apiUrl: 'https://westcoastcarsdb-0278.restdb.io/rest',
+  apiKey: '67efa9fa4b605991ae937239',
 };
-
-// export const API_URL = 'http://localhost:3000/';
